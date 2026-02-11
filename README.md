@@ -4,16 +4,13 @@ A hands-on phishing simulation lab built on Azure using GoPhish and Postfix. Dem
 Overview:
 This project sets up two Azure VMs:
   **Attacker VM**: Running GoPhish for creating and sending phishing campaigns
-  <img width="1556" height="840" alt="Screenshot 2026-02-10 at 11 34 34 PM" src="https://github.com/user-attachments/assets/f2ff9dc9-f09b-4e99-bf50-33ce716e2f48" />
   
  **Target VM**: Running Postfix mail server to receive and store phishing emails
- <img width="1518" height="821" alt="Screenshot 2026-02-10 at 11 36 39 PM" src="https://github.com/user-attachments/assets/2e3cb37f-8349-4223-8988-d7886cd3a7da" />
  
 Azure Setup Screenshots:
 
 **Resource Group Creation**:
   Creating the Azure Resource Group (gophish-rg) in East US region to contain all lab resources
-<img width="1535" height="825" alt="Screenshot 2026-02-10 at 11 39 14 PM" src="https://github.com/user-attachments/assets/f58e5e6a-9c81-4931-bd51-3b79e7087bf8" />
 
 **Virtual Network Setup**:
   Configuring the virtual network (gophish-vnet) to enable communication between attacker and
@@ -24,7 +21,6 @@ target VMs
 
 **Inbound Security Rule**:
   Adding SSH inbound rule restricted to my public IP address (CIDR /32) - following security best practices by limiting attack surface
-<img width="1536" height="651" alt="Screenshot 2026-02-10 at 11 41 08 PM" src="https://github.com/user-attachments/assets/4074e552-6366-44bf-b030-915bf230ad5c" />
 
 **Attacker VM Creation**:
   Deploying the GoPhish attacker VM (Ubuntu 24.04 LTS, Standard B1s) with SSH key authentication
